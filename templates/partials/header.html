@@ -1,0 +1,5 @@
+<header>
+{% if request.user.is_authenticated %}
+    <p>Rôle : {{ request.user.role }}</p>
+{% endif %}
+</header>
